@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--------------------------- NAVBAR ------------------------->
+    <header class="heade1">
+        <a href="#" class="logo"><img src="img/logo-travel.png" alt="logo"><i class='bx bx-menu' id="menu-icon"></i></a>
+
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#service">Services</a>
+            <a href="index.html#upcomming">Upcomming</a>
+            <a href="#contact">Contact Us</a>
+            <button class="btn-1">Get In Touch</button>
+        </nav>
+    </header>
+
+    <section>
+        <img src="img/email.png" alt="">
+    </section>
+    <!--------------------------- CONTACT ------------------------------->
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact Us</h2>
+        <form id="formOke">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Messages Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Messages"></textarea>
+        </form>
+
+        <input class="btn-1" type="submit" value="Send Messages" onclick="thank()">
+        <script type="text/javascript">
+            function thank() {
+                document.getElementById("formOke").reset();
+                Swal.fire({
+                    imageUrl: 'https://i.pinimg.com/564x/a6/c5/e5/a6c5e5db216c69085121642e20f2e903.jpg',
+                    imageHeight: 300,
+                    imageAlt: 'Thankyou'
+                })
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </section>
+
+</body>
+</html>
